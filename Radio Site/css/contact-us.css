@@ -1,0 +1,193 @@
+@import "style.css";
+
+section.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fbfbfb;
+  }
+  section.form .back-box {
+    height: auto;
+    width: 92vw;
+    padding: 10px 15px;
+    display: flex;
+    margin-top: 4.76%;
+    margin-bottom: 3%;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.1);
+  }
+  section.form .back-box .self-info {
+    margin-left: 20px;
+    padding: 25px;
+  }
+  section.form .back-box .self-info .touch {
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.5rem !important;
+  }
+  section.form .back-box .self-info .phone-no {
+    letter-spacing: 2px;
+    padding: 10px 5px;
+    width: 25vw;
+  }
+  section.form .back-box .self-info .phone-no h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  section.form .back-box .self-info .phone-no .numbers {
+    margin-top: 10px;
+    margin-left: 9%;
+  }
+  section.form .back-box .self-info .email {
+    letter-spacing: 2px;
+    padding: 30px 5px;
+    width: 35vw;
+  }
+  section.form .back-box .self-info .email h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  section.form .back-box .self-info .email .emails {
+    margin-top: 10px;
+    margin-left: 9%;
+  }
+  section.form .back-box .user-form {
+    display: flex;
+    margin: 30px 20px;
+    padding: 25px;
+  }
+  section.form .back-box .user-form ::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  section.form .back-box .user-form ::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  section.form .back-box .user-form :focus::-moz-placeholder {
+    opacity: 0;
+  }
+  section.form .back-box .user-form :focus::placeholder {
+    opacity: 0;
+  }
+  section.form .back-box .user-form .form-label {
+    margin-left: 10px;
+    font-weight: 700;
+  }
+  section.form .back-box .user-form select {
+    border-radius: 3px;
+    margin: 10px;
+    height: 50px;
+    width: 90%;
+    padding: 0px 15px;
+    border: 2px solid rgba(49, 48, 48, 0.189);
+    background-color: #fff; /* Background color for the dropdown */
+}
+
+#subject{
+  padding-right: 20px;
+}
+  section.form .back-box .user-form input {
+    border-radius: 3px;
+    margin: 10px;
+    height: 50px;
+    width: 90%;
+    padding: 0px 15px;
+    border: 2px solid rgba(49, 48, 48, 0.189);
+  }
+  section.form .back-box .user-form .first-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section.form .back-box .user-form .second-col {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section.form .back-box .user-form .third-col {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.form .back-box .user-form .third-col .message {
+    margin-right: 15px;
+  }
+  section.form .back-box .user-form .third-col textarea {
+    text-align: left;
+    border: 2px solid rgba(0, 0, 0, 0.151);
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    resize: vertical;
+    margin-left: 12px;
+  }
+  section.form .back-box .user-form .third-col .submit button {
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 40px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    color: #ffffff;
+    background-color: rgb(19, 18, 32);
+    transition: 0.5s ease;
+  }
+  section.form .back-box .user-form .third-col .submit button:hover {
+    color: #cacaca;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#countryInput:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+@media (max-width: 767px) {
+  
+  section.form {
+    margin-top: 5%;
+  } 
+  section.form .back-box {
+    height: 80vh;
+  }
+  section.form .back-box .user-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px;
+  }
+  .self-info{
+    display: none;
+  }
+  .front-page .nav .nav-logo {
+    left: 0%;
+  }
+  section.form .back-box .user-form {
+    display: flex;
+  }
+  section.form .back-box .user-form input {
+    width: 90%;
+  }
+}
